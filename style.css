@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo");
+
+* {
+  direction: rtl;
+}
+
+html,
+body {
+  background-color: #28262a;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(111, 109, 119);
+  font-family: "Heebo", sans-serif;
+  line-height: 130%;
+}
+
+div {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ion-icon {
+  color: #6369af;
+  width: 2.5vw;
+  height: 2.5vw;
+  padding-bottom: 0.5vw;
+}
+
+#container {
+  flex-direction: row;
+  flex: 1;
+}
+
+#container > div {
+  width: 50%;
+  height: 100%;
+}
+
+#right > div {
+  width: 100%;
+  height: 50%;
+}
+
+#left {
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#left > img {
+  width: auto;
+  height: 60vh;
+}
+
+#top {
+  justify-content: flex-end;
+  background-color: #6369af;
+}
+
+#top > div {
+  position: relative;
+  bottom: -2.55vh;
+}
+
+#bottom {
+  background-color: #fff;
+}
+
+#bottom > div {
+  flex-direction: row;
+}
+#bottom > div > div {
+  padding: 2vh 1.5vw;
+}
+
+#logo {
+  width: 13vh;
+  height: auto;
+  max-width: 170px;
+  min-width: 80px;
+}
+
+#text-logo {
+  width: 11.3vh;
+  max-width: 140px;
+  min-width: 70px;
+  height: auto;
+  margin-top: 1.83vh;
+}
+
+#app-store-badge {
+  position: relative;
+  width: 15.3vh;
+  max-width: 200px;
+  min-width: 150px;
+  height: 5.1vh;
+  max-height: 66.66px;
+  min-height: 50px;
+  background-image: url("assets/app-store-badge.svg");
+  background-size: cover;
+  margin-top: 12px;
+}
+
+#play-store-badge {
+  width: 15.3vh;
+  max-width: 200px;
+  min-width: 150px;
+  height: auto;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  ion-icon {
+    width: 2.5vh;
+    height: 2.5vh;
+    padding-bottom: 0.5vh;
+  }
+  #container {
+    flex-direction: column;
+  }
+  #container > div {
+    width: 100%;
+    height: auto;
+  }
+  #left {
+    overflow: hidden;
+  }
+  #left > img {
+    position: relative;
+    bottom: -20vw;
+    width: 60vw;
+    height: auto;
+  }
+}
