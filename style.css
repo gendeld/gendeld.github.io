@@ -8,12 +8,17 @@ html,
 body {
   background-color: #28262a;
   width: 100%;
-  min-height: 100%;
   margin: 0;
   padding: 0;
   color: rgb(111, 109, 119);
   font-family: "Heebo", sans-serif;
   line-height: 130%;
+}
+
+html,
+body,
+#container {
+  height: 100vh;
 }
 
 div {
